@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-color {
+    color: #7600fa;
+  }
+  .textEffect {
+    background: linear-gradient(to right, #7600fa, #ffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite 5s;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
